@@ -7,28 +7,32 @@ import Header from './Header'
 
 export default class IndecisionApp extends React.Component{
 
-	constructor(props){
-		super(props);
-		this.handleDeleteOptions = this.handleDeleteOptions.bind(this);
-		this.handleMakeDecision = this.handleMakeDecision.bind(this);
-		this.handleAddOption = this.handleAddOption.bind(this);
-		this.handleDeleteOption = this.handleDeleteOption.bind(this);
-		this.state = {
-			options: []
-		}
+	state = {
+		options: []
 	}
 
-	handleDeleteOptions(){
+	// constructor(props){
+	// 	super(props);
+	// 	this.handleDeleteOptions = this.handleDeleteOptions.bind(this);
+	// 	this.handleMakeDecision = this.handleMakeDecision.bind(this);
+	// 	this.handleAddOption = this.handleAddOption.bind(this);
+	// 	this.handleDeleteOption = this.handleDeleteOption.bind(this);
+	// 	this.state = {
+	// 		options: []
+	// 	}
+	// }
+
+	handleDeleteOptions = () => {
 		this.setState( () => ({ options: [] }));
 	}
 
-	handleDeleteOption(optionToRemove){
+	handleDeleteOption = (optionToRemove) => {
 		this.setState( (prevState) => ({
 			options: prevState.options.filter((option) => optionToRemove !== option )
 		}));
 	}
 
-	handleMakeDecision(){
+	handleMakeDecision= () =>{
 		this.setState( (prevState) => {
 			const randomNum = Math.floor(Math.random() * this.state.options.length );
 			const option = this.state.options[randomNum];
@@ -37,7 +41,7 @@ export default class IndecisionApp extends React.Component{
 		
 	}
 
-	handleAddOption(option){
+	handleAddOption = (option) => {
 
 		if (!option) {
             return 'Enter valid value to add item';
