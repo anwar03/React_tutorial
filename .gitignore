@@ -1,5 +1,5 @@
 .DS_STORE
-/indecision-app/node_modules/
+indecision-app/node_modules
 scripts/flow/*/.flowconfig
 *~
 *.pyc
@@ -22,7 +22,7 @@ chrome-user-data
 .vscode
 *.swp
 *.swo
-/indecision-app/yarn.lock
+indecision-app/yarn.lock
 
 packages/react-devtools-core/dist
 packages/react-devtools-extensions/chrome/build
