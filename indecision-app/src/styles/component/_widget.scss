@@ -1,0 +1,22 @@
+.widget{
+    background-color: $header-bg-color;
+
+    .empty-option{
+        text-align: center;
+        margin: 0;
+        padding: 1.5rem;
+        border-bottom: 1px solid #eaeaea;
+    }
+}
+
+.widget-header{
+    background: #eaeaea;
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5rem;
+    
+    .title{
+        margin: 0;
+        line-height: 4rem;
+    }
+}

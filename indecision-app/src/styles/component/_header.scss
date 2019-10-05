@@ -1,0 +1,17 @@
+.header{
+    background-color: $header-bg-color;
+    border-bottom: $bb-gray-1;
+    margin-bottom: 4.2rem;
+    padding: 0;
+
+    .title{
+        font-size: 3.2rem;
+        margin: 0;
+    }
+    
+    .subtitle{
+        font-size: 2rem;
+        margin: 0;
+    }
+}
+

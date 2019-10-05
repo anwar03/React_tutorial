@@ -1,0 +1,12 @@
+.option{
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 1.5rem;
+    border-bottom: $separator;
+
+    .option-item{
+        margin: 0;
+        line-height: 3.2rem;
+        word-break: break-all;
+    }
+}
